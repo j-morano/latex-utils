@@ -38,3 +38,23 @@ Table cell with multiple lines.
 \end{tabular}
 \end{document}
 ```
+
+Alternate colors table.
+```tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[table]{xcolor}    % loads also »colortbl«
+
+\begin{document}
+  \rowcolors{2}{gray!25}{white}
+  \begin{tabular}{cc}
+    \rowcolor{gray!50}
+    Table head & Table head\\
+    Some values & Some values\\
+    Some values & Some values\\
+    Some values & Some values\\
+    Some values & Some values\\
+  \end{tabular}
+\end{document}
+```
